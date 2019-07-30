@@ -6,7 +6,7 @@ import {
 
 import { TestBed, async, inject } from '@angular/core/testing';
 
-import { AppModule } from '../../app/app.module';
+import { AppModule } from 'app/app.module';
 
 import { Http, BaseRequestOptions, Response, ResponseOptions, RequestOptions } from '@angular/http';
 

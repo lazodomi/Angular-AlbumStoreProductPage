@@ -1,6 +1,6 @@
 import { TestBed, async } from '@angular/core/testing';
 
-import { AppModule } from '../../app/app.module';
+import { AppModule } from 'app/app.module';
 
 import { Routes } from '@angular/router';
 

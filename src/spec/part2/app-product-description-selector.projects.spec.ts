@@ -1,8 +1,8 @@
 import { TestBed, async } from '@angular/core/testing';
 
-import { AppModule } from '../../app/app.module';
+import { AppModule } from 'app/app.module';
 
-import { AppComponent } from '../../app/app.component';
+import { AppComponent } from 'app/app.component';
 
 import { BrowserModule } from '@angular/platform-browser';
 

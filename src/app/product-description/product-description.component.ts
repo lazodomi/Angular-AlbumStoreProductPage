@@ -12,11 +12,10 @@ export class ProductDescriptionComponent implements OnInit {
   constructor(private _productService: ProductService) {}
 
   ngOnInit() {
-<<<<<<< HEAD
+
     // put the JSON response into albumInfo, so it can
     // be accessed
-=======
->>>>>>> 95b891b... Completed the module
+
     this._productService.getAlbum(1).subscribe(response => this.albumInfo = response);
   }
 }

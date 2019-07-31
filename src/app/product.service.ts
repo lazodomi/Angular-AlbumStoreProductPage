@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { Http, Response } from '@angular/http';
 import 'rxjs/add/operator/map';
 
+
 @Injectable()
 export class ProductService {
 
@@ -9,14 +10,15 @@ export class ProductService {
 
   // injecting an instance of a service into a class.
   // This allows the imported instance about from Http to be used
-  constructor(private _http: Http) {
-  }
+  constructor(private _http: Http) {}
 
   getAlbum(id: number) {
-    // This issues an http call, and returns a JSON
-    // response. Therefore we need to map it
-    //
+    // This returns a Http request response.
+    // and then maps it to JSON
     return this._http.get(this._albumUrl).map((response) =>
     response.json());
+
+    // this._http.get(this._albumUrl): issues an HTTP call
+
   }
 }

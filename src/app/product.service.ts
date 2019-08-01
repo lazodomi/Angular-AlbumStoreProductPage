@@ -12,7 +12,7 @@ export class ProductService {
   // This allows the imported instance about from Http to be used
   constructor(private _http: Http) {}
 
-  getAlbum(id: number) {
+  public getAlbum(id: number) {
     // This returns a Http request response.
     // and then maps it to JSON
     return this._http.get(this._albumUrl).map((response) =>
